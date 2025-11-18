@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/devel/lib/python3/dist-packages",
+        "/home/cx/sim_ws/DroneSys_sim/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/devel/lib/python3/dist-packages",
+        "/home/cx/sim_ws/DroneSys_sim/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

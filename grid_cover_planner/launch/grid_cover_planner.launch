@@ -1,0 +1,19 @@
+<launch>
+  <arg name="drone_id" value="1" />
+
+  <node pkg="grid_cover_planner" type="grid_cover_planner_node" name="grid_cover_planner_node" output="screen">
+    <param name="rows" value="10" />
+    <param name="cols" value="12" />
+    <param name="grid_size" value="2.0" />
+    <param name="height" value="1.0" />
+    <param name="velocity" value="1.0" />
+    <param name="block_row_size" value="6" />
+    <param name="block_col_size" value="6" />
+    <param name="reach_threshold" value="0.5" />
+
+    <remap from="/grid/waypoint" to="/move_base_simple/goal" />
+    <remap from="/uav_odom" to="/ddk$(arg drone_id)/ground_truth/odom"/>
+  </node>
+
+   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find grid_cover_planner)/config/coverage_display.rviz" />
+</launch>

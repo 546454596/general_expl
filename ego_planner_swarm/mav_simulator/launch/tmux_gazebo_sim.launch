@@ -1,0 +1,19 @@
+<launch>
+  <env name="GAZEBO_MODEL_PATH" value="$(find mav_simulator)/models:$(find mrsl_models)/models:$(optenv GAZEBO_MODEL_PATH)"/>
+  <arg name="world" value="forest"/>
+  <!--arg name="world" value="swarm_exp_m2\small_office_new\small_office_with_person\cx_cafe\corner\loop\room\cx_cafe_fix\cx_cafe_fix_multip\cx_cafe_small\cx_office_big\cx_cafe_small_fix"/-->
+  <arg name="gui" default="true"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find mav_simulator)/worlds/$(arg world).world"/>
+    <arg name="debug" value="false" />
+    <arg name="verbose" value="false" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="headless" value="false"/>
+  </include>
+
+  <!-- <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find plan_manage)/config/traj.rviz" /> -->
+
+</launch>

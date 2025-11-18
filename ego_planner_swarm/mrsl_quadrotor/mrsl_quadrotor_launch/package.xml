@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mrsl_quadrotor_launch</name>
+  <version>0.0.0</version>
+  <description>The mrsl_quadrotor_launch package</description>
+
+  <maintainer email="sikang@todo.todo">sikang</maintainer>
+
+  <license>TODO</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>mrsl_models</exec_depend>
+  <exec_depend>mrsl_quadrotor_description</exec_depend>
+
+</package>

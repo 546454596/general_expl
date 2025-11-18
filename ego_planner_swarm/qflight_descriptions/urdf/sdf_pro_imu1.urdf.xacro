@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<robot name="sdf_pro_imu1" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:arg name="prefix" default="mav" />
+
+  <xacro:macro name="sdf_pro_imu1" params="prefix">
+    <link name="${prefix}/imu">
+      <visual>
+        <geometry>
+          <mesh filename="package://qflight_descriptions/meshes/sdf_pro.stl"/>
+        </geometry>
+        <origin rpy="1.57079632679 0 -1.57079632679" xyz="0.015075 -0.0152 -0.0095"/>
+        <material name="blue">
+          <color rgba=".65 0.1 0.1 1"/>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="imu_to_dfc" type="fixed">
+      <parent link="${prefix}/imu"/>
+      <child link="${prefix}/dfc"/>
+      <origin xyz="0.0152 0 -0.013" rpy="-2.35619449 0 0"/>
+      <!--<origin xyz="0.017 -0.00152 -0.00809" rpy="-2.35619449 0 0"/> -->
+    </joint>
+    <link name="${prefix}/dfc"/>
+
+    <joint name="imu_to_hires" type="fixed">
+      <parent link="${prefix}/imu"/>
+      <child link="${prefix}/hires"/>
+      <origin xyz="0.0152 0.01385 0.00414" rpy="-1.797718549 0.0 0"/>
+    </joint>
+    <link name="${prefix}/hires"/>
+
+  </xacro:macro>
+
+  <xacro:sdf_pro_imu1 prefix="$(arg prefix)"/>
+
+</robot>

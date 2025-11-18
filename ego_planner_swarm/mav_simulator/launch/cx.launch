@@ -1,0 +1,6 @@
+<launch>
+
+  <include file="$(find exploration_manager)/launch/gazebo.launch">
+    <arg name="world" value="cafe"/>
+  </include>
+</launch>

@@ -1,0 +1,14 @@
+{
+  "python.autoComplete.extraPaths": [
+    "/home/cx/sim_ws/simit/general_expl_ws/devel/lib/python3/dist-packages",
+    "/home/cx/sim_ws/amovlab/Prometheus/devel/lib/python3/dist-packages",
+    "/home/cx/sim_ws/amovlab/prometheus_mavros/devel/lib/python3/dist-packages",
+    "/opt/ros/noetic/lib/python3/dist-packages"
+  ],
+  "python.analysis.extraPaths": [
+    "/home/cx/sim_ws/simit/general_expl_ws/devel/lib/python3/dist-packages",
+    "/home/cx/sim_ws/amovlab/Prometheus/devel/lib/python3/dist-packages",
+    "/home/cx/sim_ws/amovlab/prometheus_mavros/devel/lib/python3/dist-packages",
+    "/opt/ros/noetic/lib/python3/dist-packages"
+  ]
+}

@@ -1,0 +1,27 @@
+<launch>
+  <arg name="mav_name" default="juliett"/>
+  <arg name="mav_type" default="pelican_laser_rgbd"/>
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>
+  <arg name="z" default="0.1"/>
+  <arg name="Y" default="-0.785"/>
+
+  <arg name="use_frame_prefix" default="false"/>
+  <arg name="frame_prefix" default="" unless="$(arg use_frame_prefix)"/>
+  <arg name="frame_prefix" default="$(arg mav_name)/" if="$(arg use_frame_prefix)"/>
+
+  <arg name="model" default="$(find mrsl_quadrotor_description)/urdf/$(arg mav_type)/$(arg mav_type).gazebo.xacro"/>
+  <param name="robot_description" command="xacro '$(arg model)' frame_prefix:=$(arg frame_prefix) "/>
+  <node name="spawn_robot"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    respawn="false"
+    args="-param robot_description
+    -urdf
+    -x $(arg x)
+    -y $(arg y)
+    -z $(arg z)
+    -Y $(arg Y)
+    -model $(arg mav_name)"
+    output="screen"/>
+</launch>

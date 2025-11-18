@@ -1,0 +1,25 @@
+<library path="lib/librviz_polygon_plugin">
+  <class name="polygon_draw_plugin/PolygonDrawTool"
+         type="polygon_draw_plugin::PolygonDrawTool"
+         base_class_type="rviz::Tool">
+    <description>
+      A tool for manually drawing polygons in RViz by clicking points.
+    </description>
+  </class>
+  
+  <class name="polygon_draw_plugin/PolygonDrawPanel"
+         type="polygon_draw_plugin::PolygonDrawPanel"
+         base_class_type="rviz::Panel">
+    <description>
+      A panel for controlling polygon drawing operations.
+    </description>
+  </class>
+  
+  <class name="polygon_draw_plugin/PolygonDrawDisplay"
+         type="polygon_draw_plugin::PolygonDrawDisplay"
+         base_class_type="rviz::Display">
+    <description>
+      A display for visualizing polygon messages.
+    </description>
+  </class>
+</library>

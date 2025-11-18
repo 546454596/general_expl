@@ -1,0 +1,57 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/cx/sim_ws/simit/general_expl_ws/devel/include/**",
+        "/home/cx/sim_ws/amovlab/Prometheus/devel/include/**",
+        "/home/cx/sim_ws/amovlab/prometheus_mavros/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/planner/bspline_opt/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/grid_cover_planner/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/planner/drone_detect/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/planner/plan_manage/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/explore_scanner/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/hgve_explorer/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/kr_mav_control/kr_mav_controllers/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/kr_mav_control/kr_mav_manager/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/kr_mav_control/kr_quadrotor_simulator/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/kr_mav_control/interfaces/kr_serial_interface/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/kr_mav_control/trackers/kr_trackers/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/kr_mav_control/trackers/kr_trackers_manager/include/**",
+        "/home/cx/sim_ws/amovlab/prometheus_mavros/src/mavros/libmavconn/include/**",
+        "/home/cx/sim_ws/amovlab/Prometheus/Simulator/livox_laser_gazebo_plugins/include/**",
+        "/home/cx/sim_ws/amovlab/prometheus_mavros/src/mavros/mavros/include/**",
+        "/home/cx/sim_ws/amovlab/prometheus_mavros/src/mavros/mavros_msgs/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/uav_simulator/mockamap/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/mrsl_quadrotor/mrsl_quadrotor_simulator/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/mrsl_quadrotor/mrsl_quadrotor_utils/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/uav_simulator/Utils/multi_map_server/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/planner/path_searching/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/planner/plan_env/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/uav_simulator/Utils/pose_utils/include/**",
+        "/home/cx/sim_ws/amovlab/Prometheus/Simulator/gazebo_simulator/include/**",
+        "/home/cx/sim_ws/amovlab/Prometheus/Modules/uav_control/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/uav_simulator/Utils/quadrotor_msgs/include/**",
+        "/home/cx/sim_ws/amovlab/Prometheus/Simulator/realsense_gazebo_plugin/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/rviz_polygon_plugin/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/uav_simulator/so3_control/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/uav_simulator/so3_quadrotor_simulator/include/**",
+        "/home/cx/sim_ws/amovlab/prometheus_mavros/src/mavros/test_mavros/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/planner/traj_utils/include/**",
+        "/home/cx/sim_ws/simit/general_expl_ws/src/ego_planner_swarm/uav_simulator/Utils/uav_utils/include/**",
+        "/home/cx/sim_ws/amovlab/Prometheus/Simulator/velodyne_gazebo_plugins/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

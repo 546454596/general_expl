@@ -1,0 +1,48 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/devel/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/devel/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/planning/fuel_planner/active_perception/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/planning/fuel_planner/bspline/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/planner/bspline_opt/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/utils/camera_models/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/common/common/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/planner/drone_detect/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/planner/plan_manage/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/planning/fuel_planner/exploration_manager/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/utils/mavros/libmavconn/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/planning/fuel_planner/utils/lkh_tsp_solver/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/utils/mavros/mavros/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/common/mavros_interface/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/utils/mavros/mavros_msgs/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/uav_simulator/mockamap/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/uav_simulator/Utils/multi_map_server/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/planner/path_searching/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/planner/plan_env/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/planning/fuel_planner/plan_manage/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/planning/fuel_planner/poly_traj/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/uav_simulator/Utils/pose_utils/include/**",
+        "/home/cx/sim_ws/DroneSys_sim/Modules/common/quadrotor_common/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/uav_simulator/Utils/quadrotor_msgs/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/uav_simulator/so3_control/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/uav_simulator/so3_quadrotor_simulator/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/planner/traj_utils/include/**",
+        "/home/cx/sim_ws/HKUST/ego-planner-swarm/src/uav_simulator/Utils/uav_utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,63 @@
+<launch>
+  <arg name="mav_type" default="dragon_ddk"/>
+  <arg name="odom" default="/ground_truth/odom"/>
+  <arg name="drone_id" value="0"/>
+
+  <!--spaw robot-->
+  <include file="$(find mav_simulator)/launch/single_tmux_spawn.xml">
+    <arg name="mav_name" value="ddk$(arg drone_id)" />
+    <arg name="mav_type" value="$(arg mav_type)" />
+    <arg name="x" value="0" />
+    <arg name="y" value="0" />
+    <arg name="z" value="1" />
+    <arg name="Y" value="0.0" />
+    <arg name="color/r" value="1.0" />
+    <arg name="color/g" value="0.0" />
+    <arg name="color/b" value="0.0" />
+    <arg name="color/a" value="0.7" />
+    <arg name="odom_topic" value="/ddk$(arg drone_id)/$(arg odom)" />
+  </include>
+  <!--falcon4_os1_16_256-->
+  <!-- <include file="$(find mav_simulator)/launch/single_tmux_spawn.xml">
+    <arg name="mav_name" value="ddk2" />
+    <arg name="mav_type" value="$(arg mav_type)" />
+    <arg name="x" value="0" />
+    <arg name="y" value="-1" />
+    <arg name="z" value="1" />
+    <arg name="Y" value="0.785" />
+    <arg name="color/r" value="0.0" />
+    <arg name="color/g" value="1.0" />
+    <arg name="color/b" value="0.0" />
+    <arg name="color/a" value="0.7" />
+    <arg name="odom_topic" value="/ddk2/$(arg odom)" />
+  </include>
+
+  <include file="$(find mav_simulator)/launch/single_tmux_spawn.xml">
+    <arg name="mav_name" value="ddk3" />
+    <arg name="mav_type" value="$(arg mav_type)" />
+    <arg name="x" value="1.5" />
+    <arg name="y" value="-1" />
+    <arg name="z" value="1" />
+    <arg name="Y" value="0.785" />
+    <arg name="color/r" value="0.0" />
+    <arg name="color/g" value="0.0" />
+    <arg name="color/b" value="1.0" />
+    <arg name="color/a" value="0.7" />
+    <arg name="odom_topic" value="/ddk3/$(arg odom)" />
+  </include>
+
+  <include file="$(find mav_simulator)/launch/single_tmux_spawn.xml">
+    <arg name="mav_name" value="ddk4" />
+    <arg name="mav_type" value="$(arg mav_type)" />
+    <arg name="x" value="1.5" />
+    <arg name="y" value="0" />
+    <arg name="z" value="1" />
+    <arg name="Y" value="0.785" />
+    <arg name="color/r" value="0.5" />
+    <arg name="color/g" value="0.5" />
+    <arg name="color/b" value="0.5" />
+    <arg name="color/a" value="0.7" />
+    <arg name="odom_topic" value="/ddk4/$(arg odom)" />
+  </include> -->
+
+</launch>

@@ -1,0 +1,14 @@
+<launch>
+  <arg name="mav_name" default="falcon4_os1"/>
+  <arg name="mav_type" default="falcon4_os1"/>
+  <arg name="mass" default="1.83"/>
+
+  <arg name="odom_topic" default="odom"/>
+
+  <include file="$(find mrsl_quadrotor_launch)/launch/controller.launch">
+    <arg name="mav_name" value="$(arg mav_name)"/>
+    <arg name="mav_type" value="$(arg mav_type)"/>
+    <arg name="mass" value="$(arg mass)"/>
+    <arg name="odom_topic" value="$(arg odom_topic)"/>
+  </include>
+</launch>
